@@ -16,14 +16,14 @@ The first ~2 seconds, it learns your room noise (CALIBRATION_SEC). Be quiet duri
 It computes frame energy in short blocks and compares to adaptive thresholds.
 
     
-If you get false triggers:
+If you get false triggers (too sensitive):
 
 Increase ATTACK_FACTOR (e.g., 7.5 → fewer ONs).
 
 Increase MIN_ON_TIME_SEC (e.g., 0.12) to avoid flicker.
 
     
-If it misses hits:
+If it misses the hits or notes:
 
 Decrease ATTACK_FACTOR (e.g., 4.5).
 
